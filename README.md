@@ -10,3 +10,16 @@ Emily is the application owner and, along with here, there is one additional typ
 Vendors, like Karisha, who can view designer’s profiles and choose to purchase fashion lines that have been uploaded by the designer. 
 
 Capgemini has been selected to implement the proposed solution. You will kick off the first sprint and start development on the core Minimal Viable Product (MVP) features as described in the requirements section.  
+
+
+Required MVP Features:
+
+1. View upcoming Fashion Week event details and designers
+2. View designer profiles (bio, fashion lines)
+3. View individual fashion lines
+4. Individual products (product photos + product description)
+5. Price for the uploaded fashion lines
+6. Message the vendor via email
+7. Purchase Fashion Lines
+8. Receive confirmation email after purchase
+EXTRAS: Vendor can login to account
