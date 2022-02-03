@@ -7,9 +7,9 @@ public class Outfit {
     private Integer designerId;
     private String title;
     private String description;
-    private Integer price;
+	private Double price;
 
-    public Outfit(Integer id, Integer lineId, Integer designerId, String title, String description, Integer price) {
+	public Outfit(Integer id, Integer lineId, Integer designerId, String title, String description, Double price) {
         this.id = id;
         this.lineId = lineId;
         this.designerId = designerId;
@@ -38,7 +38,7 @@ public class Outfit {
         return description;
     }
 
-    public Integer getPrice() {
+	public Double getPrice() {
         return price;
     }
 }

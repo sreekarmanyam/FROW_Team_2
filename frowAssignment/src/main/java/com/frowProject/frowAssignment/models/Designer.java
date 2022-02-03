@@ -7,14 +7,14 @@ public class Designer {
     private String summary;
     private String location;
 
-    public Designer(Integer id, String name, String summary, String location) {
+	public Designer(Integer id, String name, String summary, String location) {
         this.id = id;
         this.name = name;
         this.summary = summary;
         this.location = location;
     }
 
-    public Integer getId() {
+	public Integer getId() {
         return id;
     }
 
