@@ -6,29 +6,71 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
-<div>
-    <H1>Fashion Line Name here</H1>
-    <button><a th:href="@{/cart}">Total Cost $$</a></button>
+<div style="margin-bottom: 1em;">
+    <H1 style="margin-left: .1em;">FLOW</H1>
 </div>
-<table class="table table-striped">
-    <tbody>
-    <tr>
-        <td>Image 1</td>
-        <td>Description 1</td>
-    </tr>
-    <tr>
-        <td>Image 2</td>
-        <td>Description 2</td>
-    </tr>
-    <tr>
-        <td>Image 3</td>
-        <td>Description 3</td>
-    </tr>
-    <tr>
-        <td>Image 4</td>
-        <td>Description 4</td>
-    </tr>
-    </tbody>
+
+
+<div>
+    <H2 style="display: inline-block;">Fashion_Line_Name</H2>
+    <button style="float: right; margin-right: .1em;"><a th:href="@{/cart}">Total Cost $$</a></button>
+    <button style="float: right; margin-right: 1em;"><a href="mailto:desginer@frow.com">Message Designer</a></button>
+</div>
+
+<div style="margin-bottom: 2em;">
+    <H4 style="margin-left: .1em;">$$$$$$</H4>
+</div>
+
+
+<div class="row row-cols-1 row-cols-md-2 g-4" style="position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%); margin-top: 5.5em;">
+
+        <div class="col-lg-4 col-md-3 col-sm-6">
+        <div class="card">
+          <img class="card-img-top" src="https://media.dior.com/couture/ecommerce/media/catalog/product/9/e/1594849779_043J615A0589_C980_E08_GHC.jpg?imwidth=800"  width="200" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Item_Name</h4>
+            <p class="card-text">Description</p>
+          </div>
+        </div>
+        </div>
+
+        <div class="col-lg-4 col-md-3 col-sm-6">
+        <div class="card">
+          <img class="card-img-top" src="https://media.dior.com/couture/ecommerce/media/catalog/product/9/e/1594849779_043J615A0589_C980_E08_GHC.jpg?imwidth=800" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Item_Name</h4>
+            <p class="card-text">Description</p>
+          </div>
+        </div>
+        </div>
+
+        <div class="col-lg-4 col-md-3 col-sm-6">
+            <div class="card">
+              <img class="card-img-top" src="https://media.dior.com/couture/ecommerce/media/catalog/product/9/e/1594849779_043J615A0589_C980_E08_GHC.jpg?imwidth=800" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Item_Name</h4>
+            <p class="card-text">Description</p>
+              </div>
+            </div>
+            </div>
+
+        <div class="col-lg-4 col-md-3 col-sm-6">
+        <div class="card">
+          <img class="card-img-top" src="https://media.dior.com/couture/ecommerce/media/catalog/product/9/e/1594849779_043J615A0589_C980_E08_GHC.jpg?imwidth=800" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Item_Name</h4>
+            <p class="card-text">Description</p>
+        </div>
+        </div>
+        </div>
+      </div>
+
+
+  </div>
+
 </table>
 </body>
 </html>
