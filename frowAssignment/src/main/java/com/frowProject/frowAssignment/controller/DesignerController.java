@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 @Controller
 public class DesignerController {
 
-   @GetMapping("/designer/fashion-line")
+   @GetMapping("/fashion-line")
    public String getSingleDesigner(Model model, HttpServletRequest request) {
        return "fashion-line";
    }

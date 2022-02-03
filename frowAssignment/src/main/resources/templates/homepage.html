@@ -2,23 +2,46 @@
 <html xmlns:th="https://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Fashion Show</title>
+    <title>FROW</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="icon" href="data:image/png;base64,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">
+	
 </head>
 <body>
 <div>
+
+<div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">FROW</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="#">Fashion Shows</a>
+        <a class="nav-link" href="#">Shop</a>
+        <a class="nav-link" href="#">Cart</a>
+      </div>
+    </div>
+  </div>
+</nav>
+</div>
+
     <div class="text-center mb-5 p-5">
         <h1 >FROW</h1>
-        <h2>Welcome to our virtual fashion show!</h2>
+        <h2>Meet The Designers</h2>
     </div>
 
     <div class="container text-center">
-        <button th:each="designer: ${designers}" type="button" class="btn btn-primary translate-middle badge rounded-pill p-4 m-2">
-            <a th:href="@{/designer}" class="fs-3 text-dark">[[${designer.name}]]</a>
+        <button th:each="designer: ${designers}" type="button" class="btn btn-outline-secondary badge p-4 m-2">
+            <a th:href="@{/designer}" class="fs-3 text-dark">[[${designer.name}]]</a> 
         </button>
+        
     </div>
+    
+ 
 </div>
-
 
 </body>
 </html>
