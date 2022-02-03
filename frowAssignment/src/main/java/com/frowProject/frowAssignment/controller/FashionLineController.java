@@ -7,8 +7,8 @@ import javax.servlet.http.HttpServletRequest;
 
 public class FashionLineController {
 
-//    @GetMapping("/cart")
-//    public String getSingleDesigner(Model model, HttpServletRequest request) {
-//        return "cart";
-//    }
+   @GetMapping("/cart")
+   public String getSingleDesigner(Model model, HttpServletRequest request) {
+       return "cart";
+   }
 }
